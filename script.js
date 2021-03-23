@@ -21,7 +21,7 @@ container.append(title);
 //createElement("div") for click2, and go on.
 
 let button = document.querySelector(".click");
-button.addEventListener("click", function(){
+button.addEventListener("mouseover", function(){
     let hoya = document.createElement("img");
     hoya.classList.add("hoya");
     hoya.src = "./assets/hoya.jpg";
@@ -29,8 +29,9 @@ button.addEventListener("click", function(){
 })
 
 button.style.top = "200px";
+button.style.right = "1400px";
 
-container.addEventListener("click", function (event){
+container.addEventListener("mouseout", function (event){
     //console.log(event);
     if (event.target.classList.contains("hoya")){
         event.target.remove();
@@ -42,42 +43,80 @@ container.addEventListener("click", function (event){
 
 //green beige section
 let button2 = document.querySelector(".click2");
-button2.addEventListener("click2", function(){
-    let green = document.createElement("img2");
+button2.addEventListener("mouseover", function(){
+    let green = document.createElement("img");
     green.classList.add("green");
-    green.src = "./assets/greenbeige.jpg";
+    green.src = "./assets/green beige.jpg";
     container.append(green);
 })
 
 button2.style.top = "200px";
-button2.style.left = "400px";
+button2.style.left = "350px";
+
+container.addEventListener("mouseout", function (event){
+    //console.log(event);
+    if (event.target.classList.contains("green")){
+        event.target.remove();
+    }
+});
 
 
 //IU section
 let button3 = document.querySelector(".click3");
-button3.addEventListener("click3", function(){
-    let iu = document.createElement("img3");
+button3.addEventListener("mouseover", function(){
+    let iu = document.createElement("img");
     iu.classList.add("iu");
     iu.src = "./assets/IU_1.jpg";
     container.append(iu);
 })
 
 button3.style.top = "200px";
-button3.style.left = "800px";
+button3.style.left = "650px";
+
+container.addEventListener("mouseout", function (event){
+    //console.log(event);
+    if (event.target.classList.contains("iu")){
+        event.target.remove();
+    }
+});
 
 //BTS section
 let button4 = document.querySelector(".click4");
-button4.addEventListener("click4", function(){
-    let bts = document.createElement("img3");
+button4.addEventListener("mouseover", function(){
+    let bts = document.createElement("img");
     bts.classList.add("bts");
-    bts.src = "./assets/dynamite.jpg";
+    bts.src = "./assets/dynamaite.jpg";
     container.append(bts);
 })
 
 button4.style.top = "200px";
-button4.style.left = "1200px";
+button4.style.left = "950px";
 
+container.addEventListener("mouseout", function (event){
+    //console.log(event);
+    if (event.target.classList.contains("bts")){
+        event.target.remove();
+    }
+});
 
+//ayokay section
+let button5 = document.querySelector(".click5");
+button5.addEventListener("mouseover", function(){
+    let ayokay = document.createElement("img");
+    ayokay.classList.add("ayokay");
+    ayokay.src = "./assets/ayokay.jpg";
+    container.append(ayokay);
+})
+
+button5.style.top = "200px";
+button5.style.left = "1250px";
+
+container.addEventListener("mouseout", function (event){
+    //console.log(event);
+    if (event.target.classList.contains("ayokay")){
+        event.target.remove();
+    }
+});
 
 
 
